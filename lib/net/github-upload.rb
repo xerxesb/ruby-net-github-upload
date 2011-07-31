@@ -104,8 +104,6 @@ module Net
         }
       end
 
-      private
-
       def extract_error_message(stat)
         # @see http://docs.amazonwebservices.com/AmazonS3/2006-03-01/ErrorResponses.html
         error = FasterXmlSimple.xml_in(stat.content)['Error']
